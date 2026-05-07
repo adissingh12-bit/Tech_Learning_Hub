@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Tech Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🚀 TechHub</a>
+            <button class="nav-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 5%;">
+            <h1>Our Courses</h1>
+            <p>Explore our wide range of technology courses designed for all skill levels.</p>
+        </section>
+
+        <!-- Dynamic Content Example: Course Filters -->
+        <section>
+            <div id="filters" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="web">Web Development</button>
+                <button class="btn filter-btn" data-filter="data">Data Science</button>
+                <button class="btn filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+
+            <div class="course-grid">
+                <!-- Web Dev -->
+                <div class="course-card" data-category="web">
+                    <div style="height: 150px; background: #e0f2fe; display: flex; align-items: center; justify-content: center; font-size: 3rem; border-radius: 8px; margin-bottom: 1rem;">🌐</div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Master HTML, CSS, JavaScript, React, and Node.js to build complete web applications.</p>
+                    <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: var(--primary-color);">$99.99</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Enroll</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web">
+                    <div style="height: 150px; background: #fef3c7; display: flex; align-items: center; justify-content: center; font-size: 3rem; border-radius: 8px; margin-bottom: 1rem;">⚛️</div>
+                    <h3>React Mastery</h3>
+                    <p>Go from beginner to advanced with the world's most popular frontend library.</p>
+                    <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: var(--primary-color);">$49.99</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Enroll</a>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="course-card" data-category="data">
+                    <div style="height: 150px; background: #dcfce7; display: flex; align-items: center; justify-content: center; font-size: 3rem; border-radius: 8px; margin-bottom: 1rem;">📊</div>
+                    <h3>Data Science Bootcamp</h3>
+                    <p>Learn Python, SQL, and Machine Learning to turn raw data into actionable insights.</p>
+                    <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: var(--primary-color);">$129.99</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Enroll</a>
+                    </div>
+                </div>
+
+                <!-- UI/UX -->
+                <div class="course-card" data-category="design">
+                    <div style="height: 150px; background: #fdf2f8; display: flex; align-items: center; justify-content: center; font-size: 3rem; border-radius: 8px; margin-bottom: 1rem;">🎨</div>
+                    <h3>UI/UX Design Fundamentals</h3>
+                    <p>Learn the principles of user-centered design and master tools like Figma and Adobe XD.</p>
+                    <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: bold; color: var(--primary-color);">$79.99</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Enroll</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechHub</h3>
+                <p>Empowering the next generation of software engineers through quality education.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Tech Learning Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
